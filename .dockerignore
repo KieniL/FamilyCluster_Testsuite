@@ -1,0 +1,5 @@
+#Ignore everything
+**
+# Except these ones
+!/target/testsuite*dependencies.jar
+!/entrypoint.sh
