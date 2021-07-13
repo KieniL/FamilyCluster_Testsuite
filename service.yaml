@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: testsuite
+  namespace: family
+  labels:
+    app: testsuite
+spec:
+  type: ClusterIP
+  ports:
+   - port: 8081
+     name: testsuite
+  selector:
+   app: testsuite

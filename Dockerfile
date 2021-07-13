@@ -15,7 +15,7 @@ ENV HEADLESS true
 VOLUME /report
 
 
-WORKDIR testsuite
+WORKDIR /testsuite
 
 
 ADD ./target/testsuite*dependencies.jar testsuite.jar
