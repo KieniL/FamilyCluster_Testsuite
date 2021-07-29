@@ -18,10 +18,10 @@ VOLUME /report
 WORKDIR /testsuite
 
 
-ADD ./target/testsuite*dependencies.jar testsuite.jar
+COPY ./target/testsuite*dependencies.jar testsuite.jar
 
 
-ADD ./entrypoint.sh entrypoint.sh
+COPY ./entrypoint.sh entrypoint.sh
 
 
 ENTRYPOINT ["bash", "./entrypoint.sh"]
