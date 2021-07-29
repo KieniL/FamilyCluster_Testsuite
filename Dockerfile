@@ -15,10 +15,10 @@ VOLUME /report
 
 
 
-COPY ./target/testsuite*dependencies.jar testsuite.jar
+COPY ./target/testsuite*dependencies.jar /app/testsuite.jar
 
 
-COPY ./entrypoint.sh entrypoint.sh
+COPY ./entrypoint.sh /app/entrypoint.sh
 
 
 ENTRYPOINT ["bash", "./entrypoint.sh"]
