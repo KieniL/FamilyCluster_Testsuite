@@ -1,6 +1,11 @@
-FROM luke19/mavenchrome-base-image:1627574812
+FROM luke19/mavenchrome-base-image:1629521417
 
-
+LABEL maintainer="KieniL"
+LABEL name="testsuite"
+LABEL version="1.0.0"
+LABEL author="KieniL"
+LABEL contact="https://github.com/KieniL/FamilyCluster_Testsuite/issues"
+LABEL documentation="https://github.com/KieniL/FamilyCluster_Testsuite"
 
 ENV PROJECT_NAME FAMILY
 ENV URL http://www.google.com
